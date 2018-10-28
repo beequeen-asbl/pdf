@@ -7,9 +7,9 @@ case $1 in
          echo "Please commit any pending changes."
          exit 1
       fi
-      echo git add *
-      echo git commit -m "maj `date +%Y-%m-%d_%H:%M`"
-      echo git push
+      git add *
+      git commit -m "maj `date +%Y-%m-%d_%H:%M`"
+      git push
       ;;
    *)
       echo "Usage:"
