@@ -1,0 +1,18 @@
+#!/bin/sh
+
+case $1 in
+   deploy)
+      if [[ `git status -s` ]]; then
+         echo "The working directory is dirty."
+         echo "Please commit any pending changes."
+         exit 1
+      fi
+      echo git add *
+      echo git commit -m "maj `date +%Y-%m-%d_%H:%M`"
+      echo git push
+      ;;
+   *)
+      echo "Usage:"
+      echo "   "`basename $0`" deploy"
+      ;;
+esac
