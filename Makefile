@@ -1,6 +1,6 @@
 DAT = $(shell date +%Y-%m-%d-%H%M)
 TGT = $(shell basename ${PWD})
-BU_DIR = /mnt/DATA/BeeQueen/BACKUPS/pdf
+BU_DIR = /mnt/DATA/Apiculture/BeeQueen/BACKUPS/pdf
 
 help:
 	@echo "Usage:"
